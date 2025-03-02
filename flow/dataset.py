@@ -3,7 +3,7 @@ import os.path as osp
 import torch
 from torchvision.datasets.folder import pil_loader
 import torchvision
-import numpy as np
+import numpy as np 
 from functools import partial
 
 
@@ -78,6 +78,6 @@ dataset_dict = {
                     data_root='/home/zzhuang/DATASET/FFHQ/images256x256',
                     label_file='/home/zzhuang/DATASET/FFHQ/ffhq_aging_labels.csv'),
     'CELEBA': partial(torchvision.datasets.CelebA,
-                      root='/home/zzhuang/DATASET',
+                      root='~/mlp/celeba',
                       split='all', target_type='attr')
 }

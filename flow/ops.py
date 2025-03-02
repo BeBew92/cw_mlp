@@ -1,5 +1,5 @@
 import torch
-from flow.modules import squeeze2d
+from modules import squeeze2d
 
 
 def compute_z_shapes(
